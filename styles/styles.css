@@ -1,8 +1,12 @@
 * {
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  font-family: serif;
+}
 #wrapper {
-  background-image: url("../assets/images/t1.webp");
+  background-image: url("../assets/images/zu.JPG");
   background-size: cover;
   opacity: 0.9;
   height: 100vh;
@@ -22,6 +26,7 @@ header {
 }
 .header-top-left i {
   color: limegreen;
+  margin-right: 8px;
 }
 .header-top-area ul li {
   list-style-type: none;
@@ -34,11 +39,12 @@ a {
 }
 .header-top-right {
   float: right;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
+
 .navbar {
   background-color: #00bfff;
-  position: fixed;
-  top: 0;
 }
 .navbar li {
   list-style: none;

@@ -1,16 +1,20 @@
-* {
-  box-sizing: border-box;
-}
-body {
-  margin: 0;
-  font-family: serif;
-}
+
 #wrapper {
-  background-image: url("../assets/images/zu.JPG");
-  background-size: cover;
+  position: relative;
+  width: 100%;
   opacity: 0.9;
   height: 100vh;
 }
+
+#carouselExampleIndicators img {
+  height: 100vh;
+  width: 100%;
+  background-color: tomato;
+}
+.dark-overlay {
+  opacity: 0.9;
+}
+
 header {
   height: 150px;
   background-color: transparent;
@@ -42,6 +46,11 @@ a {
   margin-top: 15px;
   margin-bottom: 30px;
 }
+.navbar-style {
+  background-color: red;
+  height: 80px;
+  position: absolute;
+}
 
 .navbar {
   background-color: #00bfff;
@@ -66,7 +75,7 @@ a {
   height: 70px;
   margin-bottom: -10px;
   /* margin-bottom: 10px; */
-  /* margin-right: -20px; */
+  margin-right: -20px; 
 }
 .img-fluid {
   margin-left: 40px;
@@ -84,15 +93,8 @@ a {
   color: white;
   border-left: chartreuse 4px solid;
 }
-#home-section {
-  margin-top: -40px;
-  height: 100vh;
-}
-.carousel ol {
-  margin-left: 30px;
-}
 .carousel-caption {
-  margin-bottom: 150px;
+  margin-bottom: 250px;
   margin-left: -70px;
   display: flex;
   align-content: flex-start;
@@ -108,6 +110,7 @@ a {
   color: whitesmoke;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 #second-view {
   height: 50vh;
   margin-top: 50px;
@@ -139,7 +142,6 @@ a {
 #second-view h6 {
   margin-left: 40px;
   margin-top: 50px;
-
 }
 #third-view {
   height: 50vh;
@@ -178,7 +180,8 @@ a {
   height: 70vh;
   background-color: whitesmoke;
 }
-.mac-content1, .mac-content2 {
+.mac-content1,
+.mac-content2 {
   margin-top: 90px;
 }
 #footer {
@@ -203,4 +206,3 @@ a {
 .footer-content i {
   margin-right: 10px;
 }
-

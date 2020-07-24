@@ -15,16 +15,15 @@ header {
   color: white;
 }
 .header-top-area a:hover {
-    color: limegreen;
+  color: limegreen;
 }
 .header-top-left {
   margin-left: -58px;
 }
 .header-top-left i {
-    color: limegreen;
+  color: limegreen;
 }
-ul,
-li {
+.header-top-area ul li {
   list-style-type: none;
   float: left;
   margin-left: 10px;
@@ -38,6 +37,11 @@ a {
 }
 .navbar {
   background-color: #00bfff;
+  position: fixed;
+  top: 0;
+}
+.navbar li {
+  list-style: none;
 }
 .navbar-nav {
   margin-left: 100px;
@@ -73,5 +77,124 @@ a {
   background-color: limegreen;
   color: white;
   border-left: chartreuse 4px solid;
+}
+#home-section {
+  margin-top: -40px;
+  height: 100vh;
+}
+.carousel ol {
+  margin-left: 30px;
+}
+.carousel-caption {
+  margin-bottom: 150px;
+  margin-left: -70px;
+  display: flex;
+  align-content: flex-start;
+}
+.carousel-caption h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 50px;
+  line-height: 56px;
+}
+.carousel-caption p {
+  font-size: 20px;
+  color: whitesmoke;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#second-view {
+  height: 50vh;
+  margin-top: 50px;
+}
+.circle-avator {
+  height: 100px;
+  width: 100px;
+  margin-left: 40%;
+  margin-top: 60px;
+  position: relative;
+  border-radius: 100px;
+  background-color: rgb(59, 59, 59);
+}
+.img-circle {
+  height: 97px;
+  position: absolute;
+  width: 97px;
+  margin-top: 1px;
+  margin-left: 2px;
+  border-radius: 90px;
+}
+#second-view h5 {
+  margin-left: 90px;
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  color: black;
+}
+#second-view h6 {
+  margin-left: 40px;
+  margin-top: 50px;
+
+}
+#third-view {
+  height: 50vh;
+  background-color: rgb(235, 244, 245);
+  overflow: hidden;
+}
+.lap1 {
+  margin-top: 230px;
+}
+
+.lap2 {
+  margin-top: 190px;
+}
+.lap3 {
+  margin-top: 150px;
+}
+.lap4 {
+  margin-top: 200px;
+}
+#video-view {
+  height: 50vh;
+  background-color: rgb(49, 128, 155);
+}
+.video {
+  margin-top: 20px;
+}
+#video-view h4 {
+  margin-top: 150px;
+  color: white;
+}
+#video-view h6 {
+  margin-top: 10px;
+  color: white;
+}
+#macbook-section {
+  height: 70vh;
+  background-color: whitesmoke;
+}
+.mac-content1, .mac-content2 {
+  margin-top: 90px;
+}
+#footer {
+  height: 40vh;
+  background-color: rgb(46, 43, 43);
+  color: whitesmoke;
+}
+.footer-content {
+  padding-top: 80px;
+}
+.footer-content li {
+  list-style-type: none;
+  margin-top: 2px;
+}
+.footer-content a {
+  color: rgb(252, 239, 239);
+  font-size: 17px;
+}
+.list-unstyled {
+  margin-top: 30px;
+}
+.footer-content i {
+  margin-right: 10px;
 }
 

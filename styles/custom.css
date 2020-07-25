@@ -7,15 +7,17 @@ body {
   margin: 0;
   padding: 0;
   font-family: serif;
+  background-color: honeydew;
 }
 header .carousel-inner .item {
   height: 100vh;
 }
 .header-top-area {
   position: absolute;
-  z-index: 15;
+  z-index: 99;
   height: 60px;
-  width: 70%;
+  width: 100%;
+  padding: 20px 20px;
 
   background-color: transparent;
 }
@@ -55,17 +57,30 @@ header .carousel-inner .item {
 .header-top-right ul li a:hover {
   color: limegreen;
 }
+.menu {
+  position: relative;
+  z-index: 9999;
+  width: 90%;
+}
 
 .navbar-default {
   background-color: #00bfff;
-  margin-top: 50px;
+  top: 80px;
   height: 70px;
-  z-index: 10;
+  z-index: 999;
+  position: absolute;
+  box-shadow: 0px 2px 20px rgba(0,0,0,0.2);
 }
 
-.nav-item {
+.nav-item .na-link {
   margin-left: 10px;
+  font-size: 15px;
+  font-weight: 300px;
+  text-transform: uppercase;
+  position: relative;
+  
 }
+
 .navbar-brand {
     background-color: white;
     padding-top: 22px;
@@ -75,9 +90,9 @@ header .carousel-inner .item {
     margin-left: -15px;
 }
 .navbar-nav a {
+  border-left: white 1px solid;
   color: white;
   font-size: 15px;
-  border-left: white 1px solid;
 }
 .navbar-nav a:hover {
     color: rgb(97, 95, 11);
@@ -114,18 +129,24 @@ header .carousel-inner .item {
     background: rgba(22, 10, 92, 0.5);
     margin-top: 25px;
   }
-  [class*="col-"] {
+  [class*="col-sm"] {
     width: 100%;
   }
+  [class*="col-md"] {
+    width: 100%;
+  }
+  
   .navbar-toggler {
       padding: 1px 5px;
       font-size: 18px;
       line-height: 0.3;
       background-color: #fff;
-  }
+  } 
+  
 }
 /* phones */
 @media only screen and (max-width: 600px) {
+  
 }
 /* laptop and desktop */
 @media only screen and (min-width: 992px) {
@@ -157,13 +178,89 @@ header .carousel-inner .item {
     border-radius: 90px;
   }
   #second-view h5 {
-    margin-left: 90px;
     margin-top: 50px;
     font-weight: 700;
     font-size: 15px;
     color: black;
   }
   #second-view h6 {
-    margin-left: 40px;
-    margin-top: 50px;
+    margin-top: 30px;
   }
+
+
+  /****** third view  ********/
+  #third-view {
+    /* height: 50vh; */
+    overflow: hidden;
+  }
+  #third-view div{
+    /* margin-top: 50px; */
+    background-size: cover;
+  }
+  .p-1 {
+    height: 230px;
+    width: 290px;
+  }
+  .p-2 {
+    height: 290px;
+    width: 290px;
+  }.p-3 {
+    height: 340px;
+    width: 290px;
+  }
+  .p-4 {
+    height: 280px;
+    width: 290px;
+  }
+  
+
+  /*********** video view**************/
+  #video-view {
+    height: 50vh;
+    padding-top: 10px;
+  }
+  .video {
+    margin-top: 20px;
+  }
+  #video-view h4 {
+    margin-top: 150px;
+    color: white;
+  }
+  #video-view h6 {
+    margin-top: 10px;
+    color: white;
+  }
+
+
+  /********** macbook section **********/
+  #macbook-section {
+    height: 70vh;
+  }
+  .mac-content1,
+  .mac-content2 {
+    margin-top: 90px;
+  }
+
+  #footer {
+    background-color: rgb(46, 43, 43);
+    background-size: cover;
+    color: whitesmoke;
+  }
+  .footer-content {
+    padding-top: 80px;
+  }
+  .footer-content li {
+    list-style-type: none;
+    margin-top: 2px;
+  }
+  .footer-content a {
+    color: rgb(252, 239, 239);
+    font-size: 17px;
+  }
+  .list-unstyled {
+    margin-top: 30px;
+  }
+  .footer-content i {
+    margin-right: 10px;
+  }
+  

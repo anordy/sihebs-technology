@@ -3,11 +3,13 @@
   margin: 0;
   padding: 0;
 }
+html,
 body {
   margin: 0;
   padding: 0;
   font-family: serif;
-  background-color: honeydew;
+  background-color: rgb(239, 242, 247);
+  width: 100%;
 }
 header .carousel-inner .item {
   height: 100vh;
@@ -64,12 +66,13 @@ header .carousel-inner .item {
 }
 
 .navbar-default {
+  border-radius: 10px;
   background-color: #00bfff;
   top: 80px;
   height: 70px;
   z-index: 999;
   position: absolute;
-  box-shadow: 0px 2px 20px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
 }
 
 .nav-item .na-link {
@@ -78,32 +81,39 @@ header .carousel-inner .item {
   font-weight: 300px;
   text-transform: uppercase;
   position: relative;
-  
 }
 
 .navbar-brand {
-    background-color: white;
-    padding-top: 22px;
-    padding-bottom: 18px;
-    padding-left: 10px;
-    padding-right: 15px;
-    margin-left: -15px;
+  background-color: white;
+  padding-top: 22px;
+  padding-bottom: 18px;
+  padding-left: 10px;
+  padding-right: 15px;
+  margin-left: -15px;
+  border-radius: 10px;
 }
+.navbar-toggler-icon {
+  background-color: rgb(133, 145, 69);
+}
+
 .navbar-nav a {
   border-left: white 1px solid;
   color: white;
   font-size: 15px;
 }
 .navbar-nav a:hover {
-    color: rgb(97, 95, 11);
-    border-left:rgb(97, 95, 11) 2px solid;
-
+  color: rgb(97, 95, 11);
+  border-left: rgb(97, 95, 11) 2px solid;
 }
-.icon-bar {
-    background-color: black;
+
+.navbar-collapse {
+  opacity: 0.9;
+  text-align: center;
+  vertical-align: left;
+  margin-left: -15px;
 }
 .carousel-caption {
-  bottom: 210px;
+  bottom: 200px;
 }
 .carousel-caption h1 {
   font-size: 45px;
@@ -124,143 +134,120 @@ header .carousel-inner .item {
   background-position: center center;
 }
 /* tablets */
-@media only screen and (max-width: 767px) {
-  .navbar-nav.ml-auto {
-    background: rgba(22, 10, 92, 0.5);
-    margin-top: 25px;
-  }
+@media (min-width: 600px) {
   [class*="col-sm"] {
     width: 100%;
   }
-  [class*="col-md"] {
-    width: 100%;
-  }
-  
-  .navbar-toggler {
-      padding: 1px 5px;
-      font-size: 18px;
-      line-height: 0.3;
-      background-color: #fff;
-  } 
-  
 }
 /* phones */
 @media only screen and (max-width: 600px) {
-  
 }
 /* laptop and desktop */
 @media only screen and (min-width: 992px) {
 }
 
-
-
 /***************** second section styles ****************** */
 
 #second-view {
-    height: 50vh;
-    margin-top: 50px;
-  }
-  .circle-avator {
-    height: 100px;
-    width: 100px;
-    margin-left: 40%;
-    margin-top: 60px;
-    position: relative;
-    border-radius: 100px;
-    background-color: rgb(59, 59, 59);
-  }
-  .circle-avator img {
-    height: 97px;
-    position: absolute;
-    width: 97px;
-    margin-top: 1px;
-    margin-left: 2px;
-    border-radius: 90px;
-  }
-  #second-view h5 {
-    margin-top: 50px;
-    font-weight: 700;
-    font-size: 15px;
-    color: black;
-  }
-  #second-view h6 {
-    margin-top: 30px;
-  }
+  /* height: 60vh; */
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.circle-avator {
+  height: 100px;
+  width: 100px;
+  margin-left: 40%;
+  margin-top: 60px;
+  border-radius: 100px;
+  background-color: rgb(59, 59, 59);
+}
+.circle-avator img {
+  height: 97px;
+  width: 97px;
+  margin-top: 1px;
+  margin-left: 2px;
+  border-radius: 90px;
+}
+#second-view h5 {
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  color: black;
+}
+#second-view h6 {
+  margin-top: 30px;
+}
 
+/****** third view  ********/
 
-  /****** third view  ********/
-  #third-view {
-    /* height: 50vh; */
-    overflow: hidden;
-  }
-  #third-view div{
-    /* margin-top: 50px; */
-    background-size: cover;
-  }
-  .p-1 {
-    height: 230px;
-    width: 290px;
-  }
-  .p-2 {
-    height: 290px;
-    width: 290px;
-  }.p-3 {
-    height: 340px;
-    width: 290px;
-  }
-  .p-4 {
-    height: 280px;
-    width: 290px;
-  }
-  
+#third-view div {
+  /* margin-top: 50px; */
+  background-size: cover;
+}
+.p-1 {
+  height: 230px;
+  width: 290px;
+}
+.p-2 {
+  height: 290px;
+  width: 290px;
+}
+.p-3 {
+  height: 340px;
+  width: 290px;
+}
+.p-4 {
+  height: 280px;
+  width: 290px;
+}
 
-  /*********** video view**************/
-  #video-view {
-    height: 50vh;
-    padding-top: 10px;
-  }
-  .video {
-    margin-top: 20px;
-  }
-  #video-view h4 {
-    margin-top: 150px;
-    color: white;
-  }
-  #video-view h6 {
-    margin-top: 10px;
-    color: white;
-  }
+/*********** video view**************/
+#video-view {
+  /* height: 50vh; */
+  padding-top: 10px;
+}
+.video {
+  margin-top: 20px;
+}
+#video-view h4 {
+  /* margin-top: 150px; */
+  color: rgb(53, 49, 49);
+}
+#video-view h6 {
+  margin-top: 10px;
+  color: rgb(59, 58, 58);
+}
 
+/********** macbook section **********/
+#macbook-section {
+  margin-top: 50px;
+}
+.mac-content1,
+.mac-content2 {
+  margin-top: 10px;
+}
 
-  /********** macbook section **********/
-  #macbook-section {
-    height: 70vh;
-  }
-  .mac-content1,
-  .mac-content2 {
-    margin-top: 90px;
-  }
-
-  #footer {
-    background-color: rgb(46, 43, 43);
-    background-size: cover;
-    color: whitesmoke;
-  }
-  .footer-content {
-    padding-top: 80px;
-  }
-  .footer-content li {
-    list-style-type: none;
-    margin-top: 2px;
-  }
-  .footer-content a {
-    color: rgb(252, 239, 239);
-    font-size: 17px;
-  }
-  .list-unstyled {
-    margin-top: 30px;
-  }
-  .footer-content i {
-    margin-right: 10px;
-  }
-  
+/* ************** footer ***************** */
+#footer {
+  background-color: rgb(46, 43, 43);
+  background-size: cover;
+  color: whitesmoke;
+}
+.footer-content {
+  padding-top: 20px;
+}
+.footer-content li {
+  list-style-type: none;
+  margin-top: 2px;
+}
+.footer-content a {
+  color: rgb(252, 239, 239);
+  font-size: 17px;
+}
+.list-unstyled {
+  margin-top: 30px;
+}
+.footer-content i {
+  margin-right: 10px;
+}

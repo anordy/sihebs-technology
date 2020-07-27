@@ -113,7 +113,9 @@ header .carousel-inner .item {
   margin-left: -15px;
 }
 .carousel-caption {
-  bottom: 200px;
+  /* bottom: 200px; */
+  top: 300px;
+  text-align: left;
 }
 .carousel-caption h1 {
   font-size: 45px;
